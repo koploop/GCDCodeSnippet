@@ -252,23 +252,23 @@ let main_queue = DispatchQueue.main
  */
 
 // example 0x01
-let concurrent_queue_1 = DispatchQueue(label: "com.concurrent.example1", attributes: .concurrent)
-concurrent_queue_1.async {
-    
-    concurrent_queue_1.sync {
-        sleep(UInt32(0.8))
-        print("\(Thread.current), Task1 Run!")
-    }
-    
-    concurrent_queue_1.async {
-        print("\(Thread.current), Task2 Run!")
-    }
-    
-    concurrent_queue_1.async {
-        print("\(Thread.current), Task3 Run!")
-    }
-}
-print("\(Thread.current), Task4 Run!")
+//let concurrent_queue_1 = DispatchQueue(label: "com.concurrent.example1", attributes: .concurrent)
+//concurrent_queue_1.async {
+//
+//    concurrent_queue_1.sync {
+//        sleep(UInt32(0.8))
+//        print("\(Thread.current), Task1 Run!")
+//    }
+//
+//    concurrent_queue_1.async {
+//        print("\(Thread.current), Task2 Run!")
+//    }
+//
+//    concurrent_queue_1.async {
+//        print("\(Thread.current), Task3 Run!")
+//    }
+//}
+//print("\(Thread.current), Task4 Run!")
 /*
  <NSThread: 0x604000062f80>{number = 1, name = main}, Task4 Run!
  <NSThread: 0x60000006de00>{number = 4, name = (null)}, Task1 Run!
